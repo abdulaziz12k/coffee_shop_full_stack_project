@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "3dea6dee-25d1-4025-aa30-2a83b77aea8a",
+		"name": "Barista",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28281987"
+	},
+	"item": [
+		{
+			"name": "drinks-details",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 401\", function(){\r",
+							"    pm.response.to.have.status(401);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 500\", function(){\r",
+							"    pm.response.to.have.status(500);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 415\", function(){\r",
+							"    pm.response.to.have.status(415);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkZQSkpuQmhjdUNTS3JxVm5ZX055VyJ9.eyJpc3MiOiJodHRwczovLzN6MTJrLmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NGEyNjg2MDM3N2ZlZmRjYmUzMDI4YTIiLCJhdWQiOiJjb2ZmZXNob3AiLCJpYXQiOjE2ODg1MzU4MjIsImV4cCI6MTY4ODU0MzAyMiwiYXpwIjoiQ1d6ZWxXdGlrTVFsZDl1VEthS0kyb2tKVUp2eTJ4QVUiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDpkcmlua3MiLCJnZXQ6ZHJpbmtzLWRldGFpbHMiXX0.gz2o_aiNj5zr97835fDIa02YvKg_WSbfMGdcJC8C9PGSyi7Km9NNE92h-1XqybKvdUNstIBogft8pz0GrdA7VPnOYIcKCnt0qQuCe295hzX1e8fKQ-z8eaLZBnz84DDRPgC-m7877XReFaPd99UWfoDUlOXAEVPByj8fduHpv2yxbVGvLOYE6EzfHnHKnbeyB6A-w6pr6pC4JanGyydbLIAMdx8Tug0AcpyRfI7kExbmWVCcTWfbnqA6aKtiZOuhgi6CjzHYj_zbKzACcRMQFuz3PTMrCZFRYvmpowV3VqU-X0KQuhfUnpAW2DAsePqCk8dijcVBGcd242kWf1ToMQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks-details",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks-details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "drinks",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 401\", function(){\r",
+							"    pm.response.to.have.status(401);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 500\", function(){\r",
+							"    pm.response.to.have.status(500);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 415\", function(){\r",
+							"    pm.response.to.have.status(415);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkZQSkpuQmhjdUNTS3JxVm5ZX055VyJ9.eyJpc3MiOiJodHRwczovLzN6MTJrLmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NGEyNjg2MDM3N2ZlZmRjYmUzMDI4YTIiLCJhdWQiOiJjb2ZmZXNob3AiLCJpYXQiOjE2ODg1MzU4MjIsImV4cCI6MTY4ODU0MzAyMiwiYXpwIjoiQ1d6ZWxXdGlrTVFsZDl1VEthS0kyb2tKVUp2eTJ4QVUiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDpkcmlua3MiLCJnZXQ6ZHJpbmtzLWRldGFpbHMiXX0.gz2o_aiNj5zr97835fDIa02YvKg_WSbfMGdcJC8C9PGSyi7Km9NNE92h-1XqybKvdUNstIBogft8pz0GrdA7VPnOYIcKCnt0qQuCe295hzX1e8fKQ-z8eaLZBnz84DDRPgC-m7877XReFaPd99UWfoDUlOXAEVPByj8fduHpv2yxbVGvLOYE6EzfHnHKnbeyB6A-w6pr6pC4JanGyydbLIAMdx8Tug0AcpyRfI7kExbmWVCcTWfbnqA6aKtiZOuhgi6CjzHYj_zbKzACcRMQFuz3PTMrCZFRYvmpowV3VqU-X0KQuhfUnpAW2DAsePqCk8dijcVBGcd242kWf1ToMQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
